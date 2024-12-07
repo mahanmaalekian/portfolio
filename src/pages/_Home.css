@@ -1,0 +1,10 @@
+.terminal-container {
+    height: 35rem;
+    width: 100%;
+}
+.title-container {
+    margin-top: 5rem;
+}
+.title-description {
+    margin: 2rem 0rem;
+}
