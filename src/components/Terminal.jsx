@@ -1,5 +1,5 @@
 import { ReactTerminal } from "react-terminal";
-
+import './_Terminal.css';
 export default function Terminal() {
     const welcomeMessage = (
         <span>
@@ -7,6 +7,20 @@ export default function Terminal() {
         Type "help" for all available commands. <br />
       </span>
     );
+    const terminalStyles = {
+margin: '0',
+  padding: '0',
+  boxSizing: 'border-boxm',
+  textDecoration: 'none',
+  border: 'none',
+  outline: 'none',
+  fontFamily: 'monaco,Consolas,Lucida Console,monospace',
+  textAlign: 'left',
+  overflowWrap: 'break-word',
+  fontFamily: '"Source Code Pro", monospace',
+  fontSize: '18px',
+  lineHeight: '22px'
+    }
     const themes={
     "my-custom-theme": {
       themeBGColor: "#5a5d7a",
@@ -31,11 +45,9 @@ export default function Terminal() {
         </span>
       ),
       "Mahan.resume": (
-        <span
-        style={{cursor:"pointer", color:"#747fe0"}}
-        onClick={() => window.open("https://www.google.com", "_blank")}>
-            mahan_maalekian.pdf
-        </span>
+       <span>
+          <a style={{color: "#747fe0"}} href="../../mahan-maalekian-cv.pdf" target="_blank">mahan-maalekian-cv.pdf</a>
+       </span>
       ),
       "Mahan.education": (
         <span>
@@ -45,41 +57,24 @@ export default function Terminal() {
       "Mahan.contactInfo": (
         <span>
             ["
-            <span style={{cursor:"pointer", color:"#747fe0"}}
-            onClick={() => window.open("https://www.google.com", "_blank")}>
-                maaalekianmahan@gmail.com
-            </span>", "
-           <span
-           style={{cursor:"pointer", color:"#747fe0"}}
-        onClick={() => window.open("https://www.google.com", "_blank")}>
-            LinkedIn
-            </span>", "
-            <span
-            style={{cursor:"pointer", color:"#747fe0"}}
-            onClick={() => window.open("https://www.google.com", "_blank")}>
-                GitHub
-            </span>"]
+            <a style={{color: "#747fe0"}} href="mailto:maalekianmahan@gmail.com">Email</a>", "
+          <a style={{color: "#747fe0"}} href="https://www.linkedin.com/in/mahan-maalekian/" target="_blank">LinkedIn</a>
+            ", "
+           <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian" target="_blank">GitHub</a>
+           "]
         </span>
-        
       ),
 
       "Mahan.projects" : (
                 <span>
             ["
-            <span style={{cursor:"pointer", color:"#747fe0"}}
-            onClick={() => window.open("https://www.google.com", "_blank")}>
-                Vanier Exam Scheduler
-            </span>", "
-           <span
-           style={{cursor:"pointer", color:"#747fe0"}}
-        onClick={() => window.open("https://www.google.com", "_blank")}>
-            LinkedIn
-            </span>", "
-            <span
-            style={{cursor:"pointer", color:"#747fe0"}}
-            onClick={() => window.open("https://www.google.com", "_blank")}>
-                GitHub
-            </span>"]
+            <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/vanier-exam-scheduler" target="_blank">Vanier Exam Scheduler (Django, HTML/CSS, JavaScript)</a>", "
+           <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/image-filter" target="_blank">Image Filter (C)</a>", "
+           <a style={{color: "#747fe0"}} href="https://github.com/mcgill-robotics/rover-2025" target="_blank">McGill Robotics</a>", "
+            <a style={{color:"#747fe0"}} href="https://github.com/mahanmaalekian/colorful-block-game" target="_blank">Colorful Block Game (Java)</a>", "
+            <a style={{color:"#747fe0"}} href="https://github.com/mahanmaalekian/euro-2024-database" target="_blank">Euro 2024 Database (SQL)</a>", "
+            <a style={{color:"#747fe0"}} href="https://github.com/mahanmaalekian" target="_blank">And more ...</a>"
+            ]
         </span>
       )
     }

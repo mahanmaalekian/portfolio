@@ -1,0 +1,14 @@
+.terminal-container a {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: monaco,Consolas,Lucida Console,monospace;
+  text-align: left;
+  overflow-wrap: break-word;
+  font-family: "Source Code Pro";
+  font-size: 18px;
+  line-height: 22px;
+}

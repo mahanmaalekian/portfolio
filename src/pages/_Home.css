@@ -8,3 +8,16 @@
 .title-description {
     margin: 2rem 0rem;
 }
+.blinking-cursor{
+    background-color: #747fe0;
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+    width: 2rem;
+    height: 5rem;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
