@@ -1,0 +1,110 @@
+h3 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-card-container a {
+     margin-right: 20px;
+          margin-top: 20px;
+          white-space: nowrap;
+          display: inline-block;
+          line-height: 40px;
+          padding: 0 14px;
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+          border-radius: 4px;
+          letter-spacing: 0.025em;
+          text-decoration: none;
+          transition: all 0.15s ease;
+          font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+          font-size: 0.9em;
+          font-weight: 600;
+          box-sizing: border-box;
+          background: #747fe0;
+          color: #fff;
+
+}
+
+a:hover{
+     background: blue;
+            transform: translateY(-1px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+              0 3px 6px rgba(0, 0, 0, 0.08);
+
+          
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-card-container {
+    display: flex;
+    width: 20rem;
+    width: 80%;
+    justify-content: space-between;
+    border: solid 2px;
+    padding: 0.2rem;
+    height: 30rem;
+
+}
+
+.project-card-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    width: 42%;
+    flex-wrap: wrap;
+}
+
+.project-card-image {
+    width: 40%;
+    float: inline-start;
+    overflow: hidden;
+}
+
+.project-skills {
+    display: flex;
+    margin-top: 2rem;
+    
+}
+
+.project-skill {
+    border: solid 2px rgb(41, 206, 151);
+    margin-right: 0.5rem;
+    width: 6rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.project-link {
+          margin-right: 20px;
+          margin-top: 20px;
+          white-space: nowrap;
+          display: inline-block;
+          line-height: 40px;
+          padding: 0 14px;
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+          border-radius: 4px;
+          letter-spacing: 0.025em;
+          text-decoration: none;
+          transition: all 0.15s ease;
+          font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+          font-size: 0.9em;
+          font-weight: 600;
+          box-sizing: border-box;
+          background: #747fe0;
+          color: #fff;
+}

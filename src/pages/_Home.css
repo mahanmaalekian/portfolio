@@ -1,3 +1,7 @@
+div {
+  font-family: monaco,Consolas,Lucida Console,monospace; 
+}
+
 .terminal-container {
     height: 35rem;
     width: 100%;
