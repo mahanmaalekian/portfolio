@@ -7,20 +7,6 @@ export default function Terminal() {
         Type "help" for all available commands. <br />
       </span>
     );
-    const terminalStyles = {
-margin: '0',
-  padding: '0',
-  boxSizing: 'border-boxm',
-  textDecoration: 'none',
-  border: 'none',
-  outline: 'none',
-  fontFamily: 'monaco,Consolas,Lucida Console,monospace',
-  textAlign: 'left',
-  overflowWrap: 'break-word',
-  fontFamily: '"Source Code Pro", monospace',
-  fontSize: '18px',
-  lineHeight: '22px'
-    }
     const themes={
     "my-custom-theme": {
       themeBGColor: "#5a5d7a",
@@ -34,6 +20,8 @@ margin: '0',
         <span>
           <strong>clear</strong> - clears the console. <br />
           <strong>Mahan.currentLocation</strong> - Finds where Mahan is currently located at. <br />
+          <strong>Mahan.education</strong> - Gets Mahan's education info. <br />
+          <strong>Mahan.experience</strong> -Gets Mahan's experience. <br />
           <strong>Mahan.contactInfo</strong> - Gets a list of  links to Mahan's contact info. <br />
           <strong>Mahan.resume</strong> - Gets a link to Mahan's resume. <br />
           <strong>Mahan.projects</strong> - Gets a list of links to Mahans's projects.
@@ -44,6 +32,12 @@ margin: '0',
             "Montreal, QC, Canada"
         </span>
       ),
+      "Mahan.experience": (
+        <span>
+          ["Backend Software Developer at Novatek International (May 2024 - Aug 2024)", 
+          "Software Developer at Velan Inc. (June 2023 - Aug 2023)"]
+        </span>
+      ),
       "Mahan.resume": (
        <span>
           <a style={{color: "#747fe0"}} href="../../mahan-maalekian-cv.pdf" target="_blank">mahan-maalekian-cv.pdf</a>
@@ -51,7 +45,7 @@ margin: '0',
       ),
       "Mahan.education": (
         <span>
-            "B.Eng. Software Engineering - McGill University, Montreal"
+            "B.Eng. Software Engineering Co-op - McGill University, Montreal"
         </span>
       ),
       "Mahan.contactInfo": (

@@ -5,11 +5,12 @@ function NavBar(){
         <div>
             <nav>
                 <div>
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
                 </div>
                 <div>
-                <Link>Home</Link>
-                <Link>Home</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/experience">Experience</Link>
+                <Link to="/contact">Contact</Link>
                 </div>
             </nav>
 

@@ -1,0 +1,13 @@
+.experience-card {
+    border: solid;
+}
+
+.experience-card:hover{
+    cursor:  pointer;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

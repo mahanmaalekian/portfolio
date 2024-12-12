@@ -6,6 +6,9 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home'
 import NavBar from './components/NavBar';
 import Projects from './pages/Projects';
+import projects from './content/projects'
+import Contact from './pages/Contact';
+import Experience from './pages/Experience';
 // function Home() {
 //   return <div>Welcome to the Home Page</div>;
 // }
@@ -21,7 +24,9 @@ function App() {
         <NavBar/>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/projects" element={<Projects/>}/> 
+            <Route path="/projects" element={<Projects projects={projects}/>}/> 
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path="/experience" element={<Experience/>}/>
           </Routes>
         </div>
       </Router>

@@ -20,7 +20,7 @@ const links = {
 function ProjectLinks({links}) {
     return (
         <div>
-           <a href="#"><FontAwesomeIcon icon={["fab", "github"]} /> View Source</a>
+           <a href={links.github} target='_blank'><FontAwesomeIcon icon={["fab", "github"]} /> View Source</a>
         </div>
     );
 }
@@ -40,11 +40,11 @@ function ProjectCard({image, title, description, skills, links}) {
     return (
     <div className="project-card-container">
         <div className="project-card-image">
-            <img src="../images/blocks.png" alt="" />
+            <img src={image} alt="" />
         </div>
         <div className="project-card-text">
-            <h3>title</h3>
-            <p>descriptionfhlffffffffffffffffffffffffffffff fffffffffffffffffffffff ffffffffffff fffffffffffff</p>
+            <h3>{title}</h3>
+            <p>{description}</p>
             <ProjectSkills skills={skills}/>
             <ProjectLinks links={links}/>
         </div>
@@ -54,12 +54,18 @@ function ProjectCard({image, title, description, skills, links}) {
 
 
 
-export default function Projects() {
+export default function Projects({projects}) {
     return (
         <>
             <div className="projects-container">
                 <h1>Projects</h1>
-                <ProjectCard skills={skills} links={links}/>
+                {projects.map((project) => {
+                    return <ProjectCard image={project.image}
+                    title={project.title}
+                    description={project.description}
+                    skills={project.skills}
+                    links={project.links}/>
+                })}
             </div>
         </>
     )
