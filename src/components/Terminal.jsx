@@ -1,5 +1,6 @@
 import { ReactTerminal } from "react-terminal";
 import './_Terminal.css';
+import pdf from '../../static/mahan-maalekian-cv.pdf'
 export default function Terminal() {
     const welcomeMessage = (
         <span>
@@ -40,7 +41,7 @@ export default function Terminal() {
       ),
       "Mahan.resume": (
        <span>
-          <a style={{color: "#747fe0"}} href="../../mahan-maalekian-cv.pdf" target="_blank">mahan-maalekian-cv.pdf</a>
+          <a style={{color: "#747fe0"}} href={pdf} target="_blank">mahan-maalekian-cv.pdf</a>
        </span>
       ),
       "Mahan.education": (
