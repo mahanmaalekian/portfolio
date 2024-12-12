@@ -1,5 +1,5 @@
-div {
-  font-family: monaco,Consolas,Lucida Console,monospace; 
+* {
+    font-family: "Source Code Pro", monospace; 
 }
 
 .terminal-container {
