@@ -14,7 +14,7 @@ function ExperienceCard({title, description, info}) {
         <div className="experience-card" onClick={() => setClicked(!clicked)}>
             <div className="experience-card-title-container">
             <div className="timeline-marker" style={{backgroundColor:color}}></div>
-            <h1>{title}</h1>
+            <h3>{title}</h3>
             <p className="infox">{info}</p>
             </div>
 
@@ -32,6 +32,7 @@ function ExperienceCard({title, description, info}) {
 export default function Experience({experiences}){
     return (
         <div className="experience-container">
+            <h1>Experience</h1>
             {experiences.map((experience) => {
                 return <ExperienceCard title={experience.title} 
                 description={experience.description} info={experience.info}/>

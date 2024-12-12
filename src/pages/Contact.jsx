@@ -6,9 +6,9 @@ export default function Contact(){
         <div className="contact-container">
             <h1>Contact Me!</h1>
             <div>
-                <a href="#">maalekianmahan@gmail.com</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
+                <a href="mailto:maalekianmahan@gmail.com" target="_blank">maalekianmahan@gmail.com</a>
+                <a href="https://linkedin.com/in/mahan-maalekian" target="_blank">LinkedIn</a>
+                <a href="https://github.com/mahanmaalekian" target="_blank">GitHub</a>
             </div>
         </div>
     )

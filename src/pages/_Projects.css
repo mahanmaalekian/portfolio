@@ -46,6 +46,7 @@ img {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .projects-container h1 {
