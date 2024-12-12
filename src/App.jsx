@@ -9,6 +9,7 @@ import Projects from './pages/Projects';
 import projects from './content/projects'
 import Contact from './pages/Contact';
 import Experience from './pages/Experience';
+import experience from './content/experience';
 // function Home() {
 //   return <div>Welcome to the Home Page</div>;
 // }
@@ -26,7 +27,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/projects" element={<Projects projects={projects}/>}/> 
             <Route path='/contact' element={<Contact/>}/>
-            <Route path="/experience" element={<Experience/>}/>
+            <Route path="/experience" element={<Experience experiences={experience}/>}/>
           </Routes>
         </div>
       </Router>

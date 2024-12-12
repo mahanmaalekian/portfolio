@@ -1,21 +1,41 @@
 import React, { useState } from "react"
 import './_Experience.css'
 
-function ExperienceCard({title, description}) {
+function ExperienceCard({title, description, info}) {
     const [clicked, setClicked] = useState(false);
+    let color = "orange";
+    if (clicked){
+        color = "green";
+    }
+    else {
+        color = "red";
+    }
     return (
         <div className="experience-card" onClick={() => setClicked(!clicked)}>
-            <h1>title</h1>
-            {clicked && <p>Conditional</p>}
+            <div className="experience-card-title-container">
+            <div className="timeline-marker" style={{backgroundColor:color}}></div>
+            <h1>{title}</h1>
+            <p className="infox">{info}</p>
+            </div>
 
+            {clicked ? ( 
+            <div>{description.map((individual) => {
+                return <p className="bullet-point"> • {individual}</p>
+            })}</div>
+            ) : (
+                <p className="bullet-point">Click here for more info</p>
+            )}
         </div>
     )
 }
 
-export default function Experience({experience}){
+export default function Experience({experiences}){
     return (
         <div className="experience-container">
-            <ExperienceCard/>
+            {experiences.map((experience) => {
+                return <ExperienceCard title={experience.title} 
+                description={experience.description} info={experience.info}/>
+            })}
         </div>
     )
 }
