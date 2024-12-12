@@ -1,7 +1,7 @@
 h3 {
     font-size: 3rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 img {
@@ -22,7 +22,6 @@ img {
           letter-spacing: 0.025em;
           text-decoration: none;
           transition: all 0.15s ease;
-          font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
           font-size: 0.9em;
           font-weight: 600;
           box-sizing: border-box;
@@ -31,8 +30,8 @@ img {
 
 }
 
-a:hover{
-     background: blue;
+.project-card-container a :hover{
+     background:#7795f8;
             transform: translateY(-1px);
             box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
               0 3px 6px rgba(0, 0, 0, 0.08);
@@ -44,6 +43,15 @@ a:hover{
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .project-card-container {
@@ -53,7 +61,7 @@ a:hover{
     justify-content: space-between;
     border: solid 2px;
     padding: 0.2rem;
-    height: 30rem;
+    height: 20rem;
 
 }
 

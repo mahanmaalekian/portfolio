@@ -1,6 +1,12 @@
 import './_Projects.css'
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
+// Add icons to the library
+library.add(fab, faGithub);
 const skills = [
     'skill1', 'skill2'
    ];
@@ -14,7 +20,7 @@ const links = {
 function ProjectLinks({links}) {
     return (
         <div>
-           <a href="#">Demo</a>
+           <a href="#"><FontAwesomeIcon icon={["fab", "github"]} /> View Source</a>
         </div>
     );
 }
@@ -52,6 +58,7 @@ export default function Projects() {
     return (
         <>
             <div className="projects-container">
+                <h1>Projects</h1>
                 <ProjectCard skills={skills} links={links}/>
             </div>
         </>
