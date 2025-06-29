@@ -1,5 +1,10 @@
 export default [
     {
+        title: 'Intact',
+        info: 'Montreal, Qc, Canada (May 2025 - Aug 2025)',
+        description: ['Full Stack Developer']
+    },
+    {
         title: 'Novatek International',
         info: 'Montreal, Qc, Canada (May 2024 - Aug 2024)',
         description: [`Engineered 10+ API endpoints from scratch in ASP.NET to enable users to configure and manage personal
