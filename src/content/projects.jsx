@@ -19,15 +19,21 @@ export default [
 	},
     {
         title: 'Vanier Exam Scheduler',
-        description: `A full-stack web application designed for Vanier College students to efficiently manage their exam schedules. Students can search for their final exams, and seamlessly export
-         them to Google Calendar or download a calendar file.
-         Built with Django for the backend and HTML, CSS, and JavaScript for the frontend, the application simplifies
-        navigating large exam schedules by providing an intuitive and user-friendly interface.`,
+        description: `Designed and deployed a final exam scheduling tool that is used by 150+ Vanier College students every semester to effortlessly search for their final exams, add them to their schedules, and export them to their preferred calendar. Built using Django for the backend and vanilla HTML/CSS + JavaScript for the frontend.`,
         skills: ['Django\n(Python)', 'HTML', 'CSS', 'PostgreSQL', 'JavaScript'],
         links: {
             github: 'https://github.com/mahanmaalekian/vanier-exam-scheduler'
         },
         image: scheduler
+    },
+{
+        title: 'McGill Robotics Mars Rover',
+        description: `Developed a React-based control interface for the rover, enabling real-time robot navigation by displaying GPS coordinates, location tracking, and velocity data, while providing manual control capabilities for competition environments. Also engineered drive control systems for the rover using ROS in C++ and Python, implementing publishers, servers, and control protocols to manage responsive wheel movement during competitions.`,
+        skills: ['React', 'Python', 'C++', 'ROS', 'Linux'],
+        links: {
+            github: 'https://github.com/mcgill-robotics/rover-2025'
+        },
+        image: robotics
     },
 	{
 		title:'SnitchMaxxing',
@@ -76,18 +82,7 @@ export default [
          },
          image: euro
     },
-    {
-        title: 'McGill Robotics Mars Rover',
-        description: `As a member of the McGill Robotics team  I eveloped a React-based control interface for the rover, enabling real-time robot navigation by displaying GPS
-        coordinates, location tracking, and velocity data, while providing manual control capabilities for competition
-        environments. I also engineered drive control systems for the rover using ROS in C++ and Python, implementing publishers, servers,
-        and control protocols to manage wheel movement and ensure responsive, real-time navigation during competitions`,
-        skills: ['ReactJS', 'Python', 'C++', 'ROS', 'Linux'],
-        links: {
-            github: 'https://github.com/mcgill-robotics/rover-2025'
-        },
-        image: robotics
-    },
+
     {
         title: 'Colorful Block Game',
         description: ` Created a two-player game featuring a colorful and engaging UI, where opponents compete to create the largest
