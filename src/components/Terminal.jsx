@@ -35,8 +35,9 @@ export default function Terminal() {
       ),
       "Mahan.experience": (
         <span>
-          ["Backend Software Developer at Novatek International (May 2024 - Aug 2024)", 
-          "Software Developer at Velan Inc. (June 2023 - Aug 2023)"]
+          ["Software Developer Intern @ Intact (May 2025 - Aug 2025),
+	"Backend Software Developer Intern @ Novatek International (May 2024 - Aug 2024)",
+          "Software Developer @ Velan Inc. (June 2023 - Aug 2023)"]
         </span>
       ),
       "Mahan.resume": (
@@ -63,8 +64,9 @@ export default function Terminal() {
       "Mahan.projects" : (
                 <span>
             ["
-            <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/vanier-exam-scheduler" target="_blank">Vanier Exam Scheduler (Django, HTML/CSS, JavaScript)</a>", "
-           <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/image-filter" target="_blank">Image Filter (C)</a>", "
+            <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/stm32-chip8-emulator" target="_blank">CHIP-8 Emulator</a>", "
+            <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/vanier-exam-scheduler" target="_blank">Vanier Exam Scheduler</a>", "
+           <a style={{color: "#747fe0"}} href="https://github.com/mahanmaalekian/image-filter" target="_blank">Image Filter</a>", "
            <a style={{color: "#747fe0"}} href="https://github.com/mcgill-robotics/rover-2025" target="_blank">McGill Robotics</a>", "
             <a style={{color:"#747fe0"}} href="https://github.com/mahanmaalekian/colorful-block-game" target="_blank">Colorful Block Game (Java)</a>", "
             <a style={{color:"#747fe0"}} href="https://github.com/mahanmaalekian/euro-2024-database" target="_blank">Euro 2024 Database (SQL)</a>", "
@@ -83,7 +85,7 @@ export default function Terminal() {
         theme="light"
         />
      </div>
- 
+
     )
 }
 
