@@ -22,7 +22,7 @@ export default function Terminal() {
           <strong>clear</strong> - clears the console. <br />
           <strong>Mahan.currentLocation</strong> - Finds where Mahan is currently located at. <br />
           <strong>Mahan.education</strong> - Gets Mahan's education info. <br />
-          <strong>Mahan.experience</strong> -Gets Mahan's experience. <br />
+          <strong>Mahan.experience</strong> - Gets Mahan's experience. <br />
           <strong>Mahan.contactInfo</strong> - Gets a list of  links to Mahan's contact info. <br />
           <strong>Mahan.resume</strong> - Gets a link to Mahan's resume. <br />
           <strong>Mahan.projects</strong> - Gets a list of links to Mahans's projects.
