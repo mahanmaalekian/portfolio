@@ -22,7 +22,7 @@ export default [
         description: `Designed and deployed a final exam scheduling tool that is used by 150+ Vanier College students every semester to effortlessly search for their final exams, add them to their schedules, and export them to their preferred calendar. Built using Django for the backend and vanilla HTML/CSS + JavaScript for the frontend.`,
         skills: ['Django\n(Python)', 'HTML', 'CSS', 'PostgreSQL', 'JavaScript'],
         links: {
-            github: 'https://github.com/mahanmaalekian/vanier-exam-scheduler'
+            github: 'https://github.com/mahanmaalekian/Vanier-Scheduler'
         },
         image: scheduler
     },
